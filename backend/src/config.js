@@ -167,7 +167,7 @@ const CHAIN = 'rinkeby'; // only rinkeby or polygon
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'Galactic Travelers Club';
 const CONTRACT_SYMBOL = 'GTC';
-const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting
+const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x503eCBb2612a4d19867e485d5b95692640Af0c3D';
 const TREASURY_ADDRESS = '0x503eCBb2612a4d19867e485d5b95692640Af0c3D';
 const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
