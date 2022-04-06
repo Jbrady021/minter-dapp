@@ -45,7 +45,7 @@ body {
 /* HEADER */
 
 header {
-  background-color: var(--font-color);
+  background-color: var(--bg-color);
   box-shadow: var(--header-shadow);
 }
 
@@ -140,7 +140,7 @@ header .container {
 
 .card {
   position: relative;
-  background-color: var(--bg-color);
+  background-color: var(#0000);
   border-radius: 5px;
   border: 3px solid var(--accent-color);
   box-shadow: var(--card-shadow);
