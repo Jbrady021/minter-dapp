@@ -13,6 +13,7 @@
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
   --accent-color: #3e9eda;
+  --black-color: #000000;
   --header-shadow: var(--accent-color) 0px 0px 5px;
   --card-shadow: var(--accent-color) 0px 0px 20px;
 }
@@ -45,7 +46,7 @@ body {
 /* HEADER */
 
 header {
-  background-color: var(--bg-color);
+  background-color: var(--black-color);
   box-shadow: var(--header-shadow);
 }
 
