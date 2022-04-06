@@ -7,7 +7,7 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Galactic Travelers Club 2";
+const namePrefix = "Galactic Travelers Society";
 const description = "We have traveled all over the galaxy and have decided to make a pitstop at your wonderfully unique and obscure planet. Our attempts to blend in have been met with mixed results, however even our lazier efforts don’t garner even a second look. This makes the planet feel just a little bit like home. We may even decide to stay a little while longer :)";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
@@ -165,11 +165,11 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'Galactic Travelers Club 2';
-const CONTRACT_SYMBOL = 'GTC';
+const CONTRACT_NAME = 'Galactic Travelers Society';
+const CONTRACT_SYMBOL = 'GTS';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
-const OWNER_ADDRESS = '0x503eCBb2612a4d19867e485d5b95692640Af0c3D';
-const TREASURY_ADDRESS = '0x503eCBb2612a4d19867e485d5b95692640Af0c3D';
+const OWNER_ADDRESS = '0x040A73789F7Cce15e7a26f45D140a36eB5b6f4D0';
+const TREASURY_ADDRESS = '0x040A73789F7Cce15e7a26f45D140a36eB5b6f4D0';
 const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = .001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
@@ -178,10 +178,10 @@ const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a singl
 const PUBLIC_MINT_START_DATE = "2022-03-20T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = "2022-04-05T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 2000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
-const ROYALTY_ADDRESS = "0x503eCBb2612a4d19867e485d5b95692640Af0c3D"; // Address that will receive the royalty
-const BASE_URI = "ipfs://bafybeibddpt4c6lkgmlhdcb7gendosvjcdri6t3pzgjra5ifufgwowp3xi"; // only update if you want to manually set the base uri
+const ROYALTY_ADDRESS = "0x040A73789F7Cce15e7a26f45D140a36eB5b6f4D0"; // Address that will receive the royalty
+const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
 
