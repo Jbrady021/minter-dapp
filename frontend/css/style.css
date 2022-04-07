@@ -93,7 +93,7 @@ header .container {
 
 .not-connected a {
   text-decoration: none;
-  color: var(--bg-color);
+  color: var(--accent-color);
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -101,7 +101,7 @@ header .container {
 /* BUTTONS */
 
 .btn {
-  display: inline-block;
+  display: inline;
   padding: 1rem 2rem;
   background: var(--btn-bg-color);
   color: var(--accent-color);
