@@ -1,7 +1,7 @@
 const contractAddress = "0x389C3461695aC03aDDb542746824935b629f9C5a"; //Replace with your own contract address
 const chain = 'rinkeby'; // rinkeby or polygon
 
-const welcome_h1 = "Welcome to the Galactic Travelers Society NFT Project!!";
+const welcome_h1 = "Galactic Travelers Society!!";
 const welcome_h2 = "Connect to MetaMask to Get Minting";
 const welcome_p = 'We have traveled all over the galaxy and have decided to make a pitstop at your wonderfully unique and obscure planet. Our attempts to blend in have been met with mixed results, however even our lazier efforts don’t garner even a second look. This makes the planet feel just a little bit like home. We may even decide to stay a little while longer :)';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
@@ -18,7 +18,7 @@ const button_presale_coming_soon = "Get on the Whitelist";
 const button_presale_mint_whitelisted = "Mint Your Special NFT";
 const button_presale_mint_not_whitelisted = "Get on the Whitelist";
 const button_presale_already_minted = "Join The Community";
-const button_public_mint = "Mint Your NFT";
+const button_public_mint = "Beam Up Your Traveler";
 const mint_failed = "Minting failed. 😢 Please try again.";
 
 const abi = [
