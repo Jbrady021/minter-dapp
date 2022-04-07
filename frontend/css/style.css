@@ -59,7 +59,7 @@ header .container {
 .menu {
   display: flex;
   gap: 2rem;
-  align-items: right;
+  align-items: stretch;
 }
 
 /* NOT CONNECTED */
