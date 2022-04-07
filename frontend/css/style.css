@@ -52,7 +52,7 @@ header {
 
 header .container {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: normal;
   align-items: center;
 }
 
