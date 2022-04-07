@@ -14,11 +14,15 @@
   --btn-bg-color: #ffffff;
   --accent-color: #3e9eda;
   --black-color: #000000;
+  --red-color: #780b0b;
+  --purple-color: #68148b;
+  --orange-color: #ef9f26;
   --header-shadow: var(--accent-color) 0px 0px 5px;
   --card-shadow: var(--accent-color) 0px 0px 20px;
 }
 
 * {
+  background-color: var(--red-color);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
