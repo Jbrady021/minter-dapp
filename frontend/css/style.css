@@ -52,14 +52,14 @@ header {
 
 header .container {
   flex-direction: row;
-  justify-content: normal;
+  justify-content: space-between;
   align-items: center;
 }
 
 .menu {
   display: flex;
   gap: 2rem;
-  align-items: center;
+  align-items: right;
 }
 
 /* NOT CONNECTED */
