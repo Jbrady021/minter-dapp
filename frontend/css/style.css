@@ -59,12 +59,12 @@ header .container {
 .menu {
   display: flex;
   gap: 2rem;
-  align-items: stretch;
+  align-items: center;
 }
 
 /* NOT CONNECTED */
 .not-connected {
-  align-items: center;
+  align-items: right;
   height: 100%;
   text-align: center;
   margin: 0 auto 0 35vw;
