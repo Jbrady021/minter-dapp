@@ -237,7 +237,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: auto;
+  margin-bottom: 10rem;
 }
 
 .info-container {
