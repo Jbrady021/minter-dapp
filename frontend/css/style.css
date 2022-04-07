@@ -233,10 +233,11 @@ section {
 
 .mint-container {
   width: 100%;
-  height: 20%;
+  height: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: auto;
 }
 
 .info-container {
