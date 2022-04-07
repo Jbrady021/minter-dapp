@@ -65,10 +65,10 @@ header .container {
 /* NOT CONNECTED */
 .not-connected {
   align-items: center;
-  height: 10%;
+  height: 100%;
   text-align: center;
   margin: 0 auto 0 35vw;
-  opacity: 1;
+  opacity: 0;
   transform: translateY(10vh);
   transition: all 0.5s ease-in-out;
 }
@@ -93,7 +93,7 @@ header .container {
 
 .not-connected a {
   text-decoration: none;
-  color: var(--accent-color);
+  color: var(--bg-color);
   font-size: 1.5rem;
   font-weight: bold;
 }
