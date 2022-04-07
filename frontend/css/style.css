@@ -140,7 +140,7 @@ header .container {
 /* CARD */
 
 .card {
-  position: relative;
+  position: center;
   background-color: var(--bg-color-transparent);
   border-radius: 5px;
   border: 3px solid var(--accent-color);
