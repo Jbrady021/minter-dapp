@@ -34,9 +34,10 @@ body {
 }
 
 .container {
+  background-color: var(--accent-color);
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 1rem 2rem;
   justify-content: center;
