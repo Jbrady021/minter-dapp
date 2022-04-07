@@ -28,7 +28,7 @@ body {
   background-color: var(--bg-color);
   display: flex;
   flex-flow: column;
-  height: 100vh;
+  height: 10%;
   color: var(--font-color);
   font-family: var(--font-primary);
 }
@@ -101,7 +101,7 @@ header .container {
 /* BUTTONS */
 
 .btn {
-  display: inline;
+  display: inline-block;
   padding: 1rem 2rem;
   background: var(--btn-bg-color);
   color: var(--accent-color);
