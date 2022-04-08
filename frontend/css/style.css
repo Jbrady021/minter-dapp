@@ -16,7 +16,11 @@
   --black-color: #000000;
   --red-color: #780b0b;
   --purple-color: #68148b;
-  --orange-color: #ef9f26;
+  --orange-color: #f1e82d;
+  --darkgreen-color: #2c4817;
+  --darkblue-color: #0f273e;
+  --pink-color: #ef26e5;
+  --lightred-color: #ee6161;
   --header-shadow: var(--accent-color) 0px 0px 5px;
   --card-shadow: var(--accent-color) 0px 0px 20px;
 }
@@ -71,6 +75,7 @@ header .container {
 
 /* NOT CONNECTED */
 .not-connected {
+  background-color: var(--darkgreen-color);
   align-items: center;
   height: 100%;
   text-align: center;
@@ -81,11 +86,13 @@ header .container {
 }
 
 .show-not-connected {
+  background-color: var(--darkblue-color);
   opacity: 1;
   transform: translateY(0);
 }
 
 .not-connected h1 {
+  background-color: var(--lightred-color);
   text-shadow: 2px 2px 0 var(--accent-color);
   font-style: italic;
   margin: 2rem 0;
@@ -93,6 +100,7 @@ header .container {
 }
 
 .not-connected p {
+  background-color: var(--pink-color);
   font-size: 1.1rem;
   font-family: var(--font-secondary);
   line-height: 1.8;
