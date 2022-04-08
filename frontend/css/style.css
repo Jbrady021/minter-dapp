@@ -21,6 +21,7 @@
   --darkblue-color: #0f273e;
   --pink-color: #ef26e5;
   --lightred-color: #ee6161;
+  --brown-color: #412918;
   --header-shadow: var(--accent-color) 0px 0px 5px;
   --card-shadow: var(--accent-color) 0px 0px 20px;
 }
@@ -80,7 +81,7 @@ header .container {
   height: 100%;
   text-align: center;
   margin: 0 auto 0 35vw;
-  opacity: 0;
+  opacity: 1;
   transform: translateY(10vh);
   transition: all 0.5s ease-in-out;
 }
@@ -107,6 +108,7 @@ header .container {
 }
 
 .not-connected a {
+  background-color: var(--brown-color);
   text-decoration: none;
   color: var(--accent-color);
   font-size: 1.5rem;
