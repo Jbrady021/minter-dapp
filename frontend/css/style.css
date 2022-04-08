@@ -37,7 +37,7 @@ body {
   background-color: var(--accent-color);
   display: flex;
   flex-flow: column;
-  height: 50%;
+  height: 100%;
   color: var(--font-color);
   font-family: var(--font-primary);
 }
@@ -120,7 +120,7 @@ header .container {
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  background: var(--btn-bg-color);
+  background: var(--bg-color);
   color: var(--accent-color);
   font-family: var(--font-secondary);
   font-style: italic;
