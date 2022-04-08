@@ -37,7 +37,7 @@ body {
   background-color: var(--accent-color);
   display: flex;
   flex-flow: column;
-  height: 10%;
+  height: 100%;
   color: var(--font-color);
   font-family: var(--font-primary);
 }
