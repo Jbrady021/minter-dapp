@@ -33,14 +33,7 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: var(--bg-color-transparent);
-  display: flex;
-  flex-flow: column;
-  height: 100%;
-  color: var(--font-color);
-  font-family: var(--font-primary);
-}
+
 
 .container {
   background-color: var(--bg-color);
