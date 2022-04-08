@@ -35,6 +35,8 @@
 
 body {
   background-color: var(--accent-color);
+  display: flex;
+  flex-flow: column;
   height: 100%;
   color: var(--font-color);
   font-family: var(--font-primary);
@@ -129,7 +131,7 @@ header .container {
   transition: all 0.3s ease;
   box-shadow: var(--header-shadow);
   cursor: pointer;
-  position: relative;
+  position: center;
   text-decoration: none;
   outline: none;
 }
