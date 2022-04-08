@@ -31,7 +31,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  align-items: center;
 }
 
 body {
@@ -65,7 +64,7 @@ header .container {
   background-color: var(--orange-color);
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: right;
 }
 
 .menu {
