@@ -64,7 +64,7 @@ header .container {
   background-color: var(--orange-color);
   flex-direction: row;
   justify-content: space-between;
-  align-items: right;
+  align-items: center;
 }
 
 .menu {
