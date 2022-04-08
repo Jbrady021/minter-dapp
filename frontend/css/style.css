@@ -34,7 +34,7 @@
 }
 
 body {
-  background-color: var(--accent-color);
+  background-color: var(--bg-color-transparent);
   display: flex;
   flex-flow: column;
   height: 100%;
@@ -43,7 +43,7 @@ body {
 }
 
 .container {
-  background-color: var(--bg-color-transparent);
+  background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
   max-width: 960px;
