@@ -31,25 +31,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: var(--bg-color);
-  display: flex;
-  flex-flow: column;
-  height: 100vh;
-  color: var(--font-color);
-  font-family: var(--font-primary);
-}
-
-.container {
-  background-color: var(--red-color);
-  display: flex;
-  flex-direction: column;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  justify-content: center;
-  overflow: hidden;
-}
 
 /* HEADER */
 
@@ -103,7 +84,6 @@ header .container {
   font-size: 1.1rem;
   font-family: var(--font-secondary);
   line-height: 1.8;
-  height: fit-content;
 }
 
 .not-connected a {
