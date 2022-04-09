@@ -139,7 +139,23 @@ header .container {
 
 /* CARD */
 
+.card {
+  position: static;
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  border: 3px solid var(--accent-color);
+  box-shadow: var(--card-shadow);
+  padding: 5rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateX(100vw);
+  transition: all 0.5s ease-in-out;
+}
 
+.show-card {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 /* COUNTDOWN SECTION */
 
@@ -317,13 +333,6 @@ section {
   width: 100%;
 }
 
-/* SPINNER */
-.dot-spin {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(3);
-}
 
 /* MEDIA QUERIES */
 
