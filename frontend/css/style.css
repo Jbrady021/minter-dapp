@@ -30,7 +30,8 @@ body {
   background-color: var(--bg-color);
   display: flex;
   flex-flow: column;
-  height: 100vh;
+  height: 100%;
+  width: auto;
   color: var(--font-color);
   font-family: var(--font-primary);
 }
