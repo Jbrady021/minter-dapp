@@ -31,15 +31,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: var(--bg-color);
-  display: flex;
-  flex-flow: column;
-  height: 50vh;
-  color: var(--font-color);
-  font-family: var(--font-primary);
-}
-
 
 /* HEADER */
 
