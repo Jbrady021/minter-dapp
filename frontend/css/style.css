@@ -45,7 +45,7 @@ body {
 /* HEADER */
 
 header {
-  background-color: var(--bg-color-transparent);
+  background-color: var(--bg-color);
   box-shadow: var(--header-shadow);
 }
 
