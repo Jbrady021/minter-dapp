@@ -1,6 +1,3 @@
-const contractAddress = "0x389C3461695aC03aDDb542746824935b629f9C5a"; //Replace with your own contract address
-const chain = 'rinkeby'; // rinkeby or polygon
-
 const SLOTS_PER_REEL = 12;
 // radius = Math.round( ( panelWidth / 2) / Math.tan( Math.PI / SLOTS_PER_REEL ) ); 
 // current settings give a value of 149, rounded to 150
