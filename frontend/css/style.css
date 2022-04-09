@@ -76,7 +76,7 @@ header .container {
 .not-connected {
   background-color: var(--lightblue-color);
   align-items: center;
-  height: 100%;
+  height: 100px;
   text-align: center;
   margin: 5% 12% 5% 12%;
   opacity: 0;
@@ -103,6 +103,7 @@ header .container {
   font-size: 1.1rem;
   font-family: var(--font-secondary);
   line-height: 1.8;
+  <br>
 }
 
 .not-connected a {
