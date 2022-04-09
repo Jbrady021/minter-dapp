@@ -35,16 +35,6 @@ body {
   font-family: var(--font-primary);
 }
 
-.container {
-  background-color: var(--red-color);
-  display: flex;
-  flex-direction: column;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  justify-content: center;
-  overflow: hidden;
-}
 
 /* HEADER */
 
