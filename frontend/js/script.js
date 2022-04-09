@@ -1,106 +1,249 @@
-const SLOTS_PER_REEL = 12;
-// radius = Math.round( ( panelWidth / 2) / Math.tan( Math.PI / SLOTS_PER_REEL ) ); 
-// current settings give a value of 149, rounded to 150
-const REEL_RADIUS = 150;
+class Slotmachine{
+    constructor(){
+        this.bet = 0;
+        this.money = 10;
+        this.icons = ['cherry', 'barBlue', 'barGreen', 'barRed', 'sevenBlue', 'sevenGreen', 'sevenRed', 'bonus'];
+    }
 
-function createSlots (ring) {
-	
-	var slotAngle = 360 / SLOTS_PER_REEL;
+    roll(icons){
+        return Math.floor(Math.random() * this.icons.length)
+    }
+    game(){
+        let gamematch = [];
+        for(let i = 0; i < 3; i++){
+            gamematch.push(this.icons[this.roll(this.icons)]);
+        }
+        return gamematch
+    }
+    match(gamematch){
+        if (gamematch[0] == gamematch[1] && gamematch[1] == gamematch[2]){
+            console.log("entrei tudo igual", this.icons.indexOf(gamematch[0]) += 3);
+            return this.icons.indexOf(gamematch[0]) += 3
+        }
+        let bar = ['barBlue', 'barGreen', 'barRed'];
+        for(let i = 0; i < 3; i++){
+            if(bar.indexOf(gamematch[i]) >= 0){
+              bar.splice(bar.indexOf(gamematch[i]),1);
+            }
+          }
+          if (bar.length == 0){
+            console.log("entrei no BAR");
+            return 1
+          }
+        let seven =['sevenBlue', 'sevenGreen', 'sevenRed'];
+        for(let i = 0; i < 3; i++){
+            if(seven.indexOf(gamematch[i]) >= 0){
+              seven.splice(seven.indexOf(gamematch[i]),1);
+            }
+          }
+          if (seven.length == 0){
+            console.log("entrei no SEVEN");
+            return 2
+        }
+        console.log("fui direto pro final");
+        return 0
+    }
 
-	var seed = getSeed();
+    wallet(bet){
+        this.bet = bet;
+        this.money = this.money - this.bet;
+        return this.money
+    }
 
-	for (var i = 0; i < SLOTS_PER_REEL; i ++) {
-		var slot = document.createElement('div');
-		
-		slot.className = 'slot';
-
-		// compute and assign the transform for this slot
-		var transform = 'rotateX(' + (slotAngle * i) + 'deg) translateZ(' + REEL_RADIUS + 'px)';
-
-		slot.style.transform = transform;
-
-		// setup the number to show inside the slots
-		// the position is randomized to 
-
-		var content = $(slot).append('<p>' + ((seed + i)%12)+ '</p>');
-
-		// add the poster to the row
-		ring.append(slot);
-	}
+    win(game){
+      let numero;
+      let oi;
+      const teste = ['barBlue', 'barGreen', 'barRed'];
+       console.log("TESTE",this.match(teste), this.bet);
+        numero =this.bet * this.match(teste);
+      this.money = this.money + numero;
+      oi = 0.75 * 2;
+        console.log('DINDIN',numero, oi, this.money);
+        return this.money  
+    }
+    resetGame(){
+        const beginGame = ['?', '?', '?'];
+        return beginGame
+    }
 }
 
-function getSeed() {
-	// generate random number smaller than 13 then floor it to settle between 0 and 12 inclusive
-	return Math.floor(Math.random()*(SLOTS_PER_REEL));
+const slotmachine = new Slotmachine;
+
+const btnRightElement = document.getElementById('btnRight');
+
+const firstColum = document.getElementById('columOne');
+const secondColum = document.getElementById('columTwo');
+const thirdColum = document.getElementById('columThree');
+
+const yourMoney = document.getElementById('cupom');
+const plus10 = document.getElementById('btn10');
+const plus25 = document.getElementById('btn25');
+const plus50 = document.getElementById('btn50');
+const plusDollar = document.getElementById('btnDollar');
+const takeBack = document.getElementById('takeMoney');
+const betMoney = document.getElementById('bet');
+
+let din = 0;
+
+let cash = (cents) => {
+    if (cents === 'x'){
+        din = 0;
+        return betMoney.innerHTML = din;
+    }
+    din += cents;
+    betMoney.innerHTML = din;
 }
 
-function spin(timer) {
-	//var txt = 'seeds: ';
-	for(var i = 1; i < 6; i ++) {
-		var oldSeed = -1;
-		/*
-		checking that the old seed from the previous iteration is not the same as the current iteration;
-		if this happens then the reel will not spin at all
-		*/
-		var oldClass = $('#ring'+i).attr('class');
-		if(oldClass.length > 4) {
-			oldSeed = parseInt(oldClass.slice(10));
-			console.log(oldSeed);
-		}
-		var seed = getSeed();
-		while(oldSeed == seed) {
-			seed = getSeed();
-		}
-
-		$('#ring'+i)
-			.css('animation','back-spin 1s, spin-' + seed + ' ' + (timer + i*0.5) + 's')
-			.attr('class','ring spin-' + seed);
-	}
-
-	console.log('=====');
+function printWalletBet(din){
+    const cash = slotmachine.wallet(din);
+    yourMoney.innerHTML = cash;
+    betMoney.innerHTML = 0;
+}
+function printWalletWin(icons){
+    const winCash = slotmachine.win(icons);
+    console.log("ICONS", icons, "winCash", winCash);
+    yourMoney.innerHTML = winCash;
 }
 
-$(document).ready(function() {
+function convertChar(icons){
+    let iconsRound = [];
+     
+    for(let i = 0; i < icons.length; i++)
+    {
+        switch(icons[i]){
+            case 'cherry':
+                iconsRound.push('&#127826');
+                break;
+            case'barBlue':
+                iconsRound.push('BAR');
+                break;
+            case'barGreen':
+                iconsRound.push('BAR<br>BAR');
+                break;
+            case'barRed':
+                iconsRound.push('BAR<br>BAR<br>BAR');
+                break;
+            case'sevenBlue':
+                iconsRound.push('7');
+                break;
+            case'sevenGreen':
+                iconsRound.push('7');
+                break;
+            case'sevenRed':
+                iconsRound.push('7');
+                break;
+            case'bonus':
+                iconsRound.push('&#127826;');
+                break;
+        }
+    }
+    printluckyGame(iconsRound);
+    printWalletWin(icons);
+}
 
-	// initiate slots 
- 	createSlots($('#ring1'));
- 	createSlots($('#ring2'));
- 	createSlots($('#ring3'));
- 	createSlots($('#ring4'));
- 	createSlots($('#ring5'));
+function color(icons){
+    if(icons[0] === 'barBlue' || icons[0] === 'sevenBlue'){
+            firstColum.classList.toggle('blue');
+            firstColum.classList.toggle('color');
+    }
+    if(icons[0] === 'barGreen' || icons[0] === 'sevenGreen'){
+            firstColum.classList.toggle('green');
+            firstColum.classList.toggle('color');
+    }
+    if(icons[0] === 'barRed' || icons[0] === 'sevenRed'){
+            firstColum.classList.toggle('red');
+            firstColum.classList.toggle('color');
+    }
+    if(icons[1] === 'barBlue' || icons[1] === 'sevenBlue'){
+            secondColum.classList.toggle('blue');
+            secondColum.classList.toggle('color');
+    }
+    if(icons[1] === 'barGreen' || icons[1] === 'sevenGreen'){
+            secondColum.classList.toggle('green');
+            secondColum.classList.toggle('color');
+    }
+    if(icons[1] === 'barRed' || icons[1] === 'sevenRed'){
+        secondColum.classList.toggle('red');
+        secondColum.classList.toggle('color');
+    }
+    if(icons[2] === 'barBlue' || icons[2] === 'sevenBlue'){
+        thirdColum.classList.toggle('blue');
+        thirdColum.classList.toggle('color');
+    }
+    if(icons[2] === 'barGreen' || icons[2] === 'sevenGreen'){
+        thirdColum.classList.toggle('green');
+        thirdColum.classList.toggle('color');
+    }
+    if(icons[2] === 'barRed' || icons[2] === 'sevenRed'){
+        thirdColum.classList.toggle('red');
+        thirdColum.classList.toggle('color');
+    }
+    convertChar(icons);
+}
 
- 	// hook start button
- 	$('.go').on('click',function(){
- 		var timer = 2;
- 		spin(timer);
- 	})
+function printluckyGame(iconsRound){
+    firstColum.innerHTML = iconsRound[0];
+    secondColum.innerHTML = iconsRound[1];
+    thirdColum .innerHTML = iconsRound[2];
+}
+function anotherGame(){
+    btnRightElement.classList.toggle('reset');
+    btnRightElement.classList.toggle('start');
+    btnRightElement.innerText = 'SPIN';
+}
 
- 	// hook xray checkbox
- 	$('#xray').on('click',function(){
- 		//var isChecked = $('#xray:checked');
- 		var tilt = 'tiltout';
- 		
-    if($(this).is(':checked')) {
- 			tilt = 'tiltin';
- 			$('.slot').addClass('backface-on');
- 			$('#rotate').css('animation',tilt + ' 2s 1');
+function play(){
+    let icons = [];
+    printWalletBet(din);
+    icons = slotmachine.game();
+    color(icons);
+    btnRightElement.classList.toggle('reset');
+    btnRightElement.classList.toggle('start');
+    btnRightElement.innerText = 'NEW GAME'; 
+}
+function cleanIcons(){
+    firstColum.classList.remove("blue", "green", "red");
+    firstColum.classList.add("color");
 
-			setTimeout(function(){
-			  $('#rotate').toggleClass('tilted');
-			},2000);
- 		} else {
-      tilt = 'tiltout';
- 			$('#rotate').css({'animation':tilt + ' 2s 1'});
+    secondColum.classList.remove("blue", "green", "red");
+    secondColum.classList.add("color");
 
-			setTimeout(function(){
-	 			$('#rotate').toggleClass('tilted');
-	 			$('.slot').removeClass('backface-on');
-	 		},1900);
- 		}
- 	})
+    thirdColum.classList.remove("blue", "green", "red");
+    thirdColum.classList.add("color");
+}
+function newGame(){
+    cleanIcons();
+    anotherGame();
+    const iconsRound = slotmachine.resetGame(); 
+    firstColum.innerText = iconsRound[0];
+    secondColum.innerText = iconsRound[1];
+    thirdColum .innerText = iconsRound[2];
+}
 
- 	// hook perspective
- 	$('#perspective').on('click',function(){
- 		$('#stage').toggleClass('perspective-on perspective-off');
- 	})	
- });
+btnRightElement.addEventListener('click', () => {
+    if (btnRightElement.innerText === 'SPIN' && din > 0){
+        play(); 
+    }
+    else{
+        din = 0;
+        newGame(); 
+    }
+});
+
+plus10.addEventListener('click', () =>{
+    cash(0.1);  
+});
+plus25.addEventListener('click', () =>{
+    cash(0.25);  
+});
+plus50.addEventListener('click', () =>{
+    cash(0.50);  
+});
+plusDollar.addEventListener('click', () =>{
+    cash(1);  
+});
+takeBack.addEventListener('click', () =>{
+    cash('x');  
+});
+
+console.log("PLAY",play());

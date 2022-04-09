@@ -1,27 +1,58 @@
-<!DOCTYPE html>
 <html lang="en">
-<div id="stage" class="perspective-on">
-		  <div id="rotate">
-			    <div id="ring1" class="ring"></div>
-			    <div id="ring2" class="ring"></div>
-			    <div id="ring3" class="ring"></div>
-			    <div id="ring4" class="ring"></div>
-			    <div id="ring5" class="ring"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Slot Machine</title>
+    <link rel="stylesheet" href="../slotMachine/styles/style.css" />
+  </head>
+  <body>
+      <header>
+          <h1>Welcome to Slot Machine</h1>
+      </header>
+
+    <div id = "wallet">
+        <span id = "cupom" class = "yours">oi</span>
+    </div> 
+    <div id = "all">
+
+      <div class= "machine">
+            <section class= "screen">
+                <div id="contentOne" class= "one">
+                    <span id="columOne" class = 'icon color'>?</span>
+                </div>
+                <div id="contentTwo" class= "two">
+                    <span id="columTwo" class = 'icon color'>?</span>
+                </div>
+                <div id="contentThree" class= "three">
+                  <span id="columThree" class = 'icon color'>?</span>
+                </div>
+            </section>
+
+            <section class= "money">
+                <span id = "line"></span>
+                <span class= "din">$$$$</span>
+                <span class = "moneyBox">
+                    <span id = "bet" class= "betMoney">oi</span> 
+                </span>
+                <span class= "din">$$$$</span>
+                <span id = "coins">
+                    <button id = 'btn10' class = 'btn money'>10¢</button>
+                    <button id = 'btn25' class = 'btn money'>25¢</button>
+                    <button id = 'btn50' class = 'btn money'>50¢</button>
+                    <button id = 'btnDollar' class = 'btn money'>$1</button>
+                    <button id = 'takeMoney' class = 'btn money'>take money</button>
+                </span>
+            </section>
     </div>
-  <div>
-			    <button class="go">Start spinning</button>
-		  </div>
-  
-		  <div>
-			    <label>
-				      <input type="checkbox" id="xray">
-				      Show inner workings
-			    </label>
-			    <label>
-				      <input type="checkbox" id="perspective">
-				      Toggle perspective
-			    </label>
-		  </div>
-  
-	</div>
-	</html>
+
+        <div class = 'buttons'>
+            
+            <button id = 'btnRight' class = 'btn start'>SPIN</button>
+        </div>
+            </div>
+
+      <script src="../slotMachine/javascripts/slotmachine.js"></script>
+      <script src="../slotMachine/javascripts/index.js"></script>
+  </body>
+</html>
