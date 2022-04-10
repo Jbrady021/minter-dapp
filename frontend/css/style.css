@@ -84,13 +84,14 @@ header .container {
   font-size: 3.5rem;
 }
 
-.not-connected p {
-  background-color: var(--black-color);
-  font-size: 1.1rem;
-  font-family: var(--font-secondary);
-  line-height: 1.8;
-}
 
+
+.not-connected a {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
 /* BUTTONS */
 
