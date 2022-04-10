@@ -91,12 +91,6 @@ header .container {
   line-height: 1.8;
 }
 
-.not-connected a {
-  text-decoration: none;
-  color: var(--accent-color);
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 
 /* BUTTONS */
 
