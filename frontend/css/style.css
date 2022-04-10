@@ -59,46 +59,47 @@ header .container {
 }
 
 /* NOT CONNECTED */
+.not-connected {
+  background-color: var(--lightblue-color);
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  margin: 5% 12% 5% 12%;
+  opacity: 0;
+  transform: translateY(10vh);
+  transition: all 0.5s ease-in-out;
+}
 
+.show-not-connected {
+  background-color: var(--pink-color);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.not-connected h1 {
+  background-color: var(--blue-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-style: italic;
+  margin: 2rem 0;
+  font-size: 3.5rem;
+}
+
+.not-connected p {
+  background-color: var(--black-color);
+  font-size: 1.1rem;
+  font-family: var(--font-secondary);
+  line-height: 1.8;
+}
+
+.not-connected a {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
 /* BUTTONS */
 
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background: var(--btn-bg-color);
-  color: var(--accent-color);
-  font-family: var(--font-secondary);
-  font-style: italic;
-  font-weight: bold;
-  font-size: 1rem;
-  text-align: center;
-  text-transform: capitalize;
-  transition: all 0.3s ease;
-  box-shadow: var(--header-shadow);
-  cursor: pointer;
-  position: relative;
-  text-decoration: none;
-  outline: none;
-}
-.btn:hover {
-  box-shadow: none;
-}
-.btn:disabled {
-  cursor: default;
-}
-
-.wallet-btn {
-  border-radius: 5rem;
-  margin-left: 2rem;
-  border-color: transparent;
-}
-
-.hero-btn {
-  border-radius: 4px;
-  font-size: 1.2rem;
-  padding: 1.5rem 3rem;
-}
 
 /* CARD */
 
