@@ -148,6 +148,7 @@ header .container {
   padding: 5rem;
   margin-bottom: 2rem;
   opacity: 0;
+  transform: translateX(100vw);
   transition: all 0.5s ease-in-out;
 }
 
