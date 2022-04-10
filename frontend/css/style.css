@@ -61,12 +61,6 @@ header .container {
 /* NOT CONNECTED */
 .not-connected {
   background-color: var(--lightblue-color);
-  align-items: center;
-  height: 100%;
-  text-align: center;
-  margin: 5% 12% 5% 12%;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
 }
 
 .show-not-connected {
