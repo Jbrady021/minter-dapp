@@ -70,13 +70,15 @@ header .container {
   transition: all 0.5s ease-in-out;
 }
 
-.show-not-connected {
-  background-color: var(--pink-color);
-  opacity: 1;
-  transform: translateY(0);
+
+
+.not-connected h1 {
+  background-color: var(--blue-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-style: italic;
+  margin: 2rem 0;
+  font-size: 3.5rem;
 }
-
-
 
 .not-connected p {
   background-color: var(--black-color);
