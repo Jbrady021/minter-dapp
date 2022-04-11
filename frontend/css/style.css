@@ -66,7 +66,7 @@ header .container {
   text-align: center;
   margin: 5% 12% 5% 12%;
   opacity: 0;
-  transition: all 0.5s ease-in-out;
+  transform: translateY(10vh);
 }
 
 .show-not-connected {
