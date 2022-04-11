@@ -55,7 +55,7 @@ header .container {
   background-color: var(--green-color);
   display: flex;
   gap: 2rem;
-  align-items: center;
+  align-items: stretch;
 }
 
 /* NOT CONNECTED */
