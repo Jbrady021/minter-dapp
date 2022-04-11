@@ -71,6 +71,7 @@ header .container {
 }
 
 
+
 .not-connected h1 {
   background-color: var(--blue-color);
   text-shadow: 2px 2px 0 var(--accent-color);
@@ -329,6 +330,12 @@ section {
 }
 
 /* SPINNER */
+.dot-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(3);
+}
 
 /* MEDIA QUERIES */
 
