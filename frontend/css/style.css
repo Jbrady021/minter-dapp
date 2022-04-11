@@ -53,9 +53,8 @@ header .container {
 
 .menu {
   background-color: var(--green-color);
-  display: flex;
   gap: 2rem;
-  align-items: stretch;
+  align-items: center;
 }
 
 /* NOT CONNECTED */
