@@ -117,7 +117,8 @@ header .container {
   position: relative;
   text-decoration: none;
   outline: none;
-  width: 30%
+  width: 30%;
+  margin: auto;
 }
 .btn:hover {
   box-shadow: none;
