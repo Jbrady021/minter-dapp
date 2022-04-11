@@ -61,6 +61,34 @@ header .container {
 /* NOT CONNECTED */
 
 
+.show-not-connected {
+  background-color: var(--pink-color);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.not-connected h1 {
+  background-color: var(--blue-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-style: italic;
+  margin: 2rem 0;
+  font-size: 3.5rem;
+}
+
+.not-connected p {
+  background-color: var(--black-color);
+  font-size: 1.1rem;
+  font-family: var(--font-secondary);
+  line-height: 1.8;
+}
+
+.not-connected a {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 /* BUTTONS */
 
 .btn {
