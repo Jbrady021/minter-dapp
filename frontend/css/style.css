@@ -72,7 +72,6 @@ header .container {
 
 .show-not-connected {
   background-color: var(--pink-color);
-  opacity: 1;
 }
 
 .not-connected h1 {
