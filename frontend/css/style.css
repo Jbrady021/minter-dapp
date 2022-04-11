@@ -147,7 +147,7 @@ header .container {
   box-shadow: var(--card-shadow);
   padding: 5rem;
   margin-bottom: 2rem;
-  border-width: 10%;
+  width: 10%;
 }
 
 .show-card {
