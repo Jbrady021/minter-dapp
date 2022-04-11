@@ -148,7 +148,7 @@ header .container {
   padding: 5rem;
   margin-bottom: 2rem;
   width: 70%;
-  align-items: center;
+  margin: 1% 5% 1% 5%
 }
 
 .show-card {
