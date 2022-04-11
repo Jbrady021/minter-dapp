@@ -70,9 +70,6 @@ header .container {
   transition: all 0.5s ease-in-out;
 }
 
-.show-not-connected {
-  background-color: var(--pink-color);
-}
 
 .not-connected h1 {
   background-color: var(--blue-color);
