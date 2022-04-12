@@ -13,71 +13,71 @@
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
   --accent-color: #be7efe;
-  --red-color: #890c0c;
-  --gold-color: #cfa118;
-  --lime-color: #8fed0b;
-  --green-color: #124608;
-  --lightblue-color: #09dcf8;
-  --pink-color: #ff0fef;
-  --blue-color: #1119f5;
-  --black-color: #000000;
   --header-shadow: var(--accent-color) 0px 0px 5px;
   --card-shadow: var(--accent-color) 0px 0px 20px;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
   background-color: var(--bg-color);
   display: flex;
   flex-flow: column;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
   color: var(--font-color);
   font-family: var(--font-primary);
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  justify-content: center;
+  overflow: hidden;
+}
 
 /* HEADER */
 
 header {
-  background-color: var(--gold-color);
+  background-color: var(--bg-color);
   box-shadow: var(--header-shadow);
 }
 
 header .container {
-  background-color: var(--lime-color);
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
 .menu {
-  background-color: var(--green-color);
   display: flex;
-  gap: 10rem;
+  gap: 2rem;
   align-items: center;
 }
 
 /* NOT CONNECTED */
 .not-connected {
-  background-color: var(--lightblue-color);
   align-items: center;
   height: 100%;
   text-align: center;
-  margin: 5% 12% 5% 12%;
-  opacity: 1;
+  margin: 0 auto 0 35vw;
+  opacity: 0;
   transform: translateY(10vh);
   transition: all 0.5s ease-in-out;
 }
 
 .show-not-connected {
-  background-color: var(--pink-color);
   opacity: 1;
   transform: translateY(0);
 }
 
 .not-connected h1 {
-  background-color: var(--blue-color);
   text-shadow: 2px 2px 0 var(--accent-color);
   font-style: italic;
   margin: 2rem 0;
@@ -85,7 +85,6 @@ header .container {
 }
 
 .not-connected p {
-  background-color: var(--black-color);
   font-size: 1.1rem;
   font-family: var(--font-secondary);
   line-height: 1.8;
@@ -101,6 +100,7 @@ header .container {
 /* BUTTONS */
 
 .btn {
+  display: inline-block;
   padding: 1rem 2rem;
   background: var(--btn-bg-color);
   color: var(--accent-color);
@@ -116,7 +116,6 @@ header .container {
   position: relative;
   text-decoration: none;
   outline: none;
-  width: 30%;
 }
 .btn:hover {
   box-shadow: none;
@@ -140,15 +139,16 @@ header .container {
 /* CARD */
 
 .card {
-  position: static;
+  position: relative;
   background-color: var(--bg-color);
   border-radius: 5px;
   border: 3px solid var(--accent-color);
   box-shadow: var(--card-shadow);
   padding: 5rem;
   margin-bottom: 2rem;
-  width: 65%;
-  margin: auto
+  opacity: 0;
+  transform: translateX(100vw);
+  transition: all 0.5s ease-in-out;
 }
 
 .show-card {
