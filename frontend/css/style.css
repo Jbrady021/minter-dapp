@@ -48,24 +48,6 @@
   outline: none;
   width: 30%;
 }
-.btn:hover {
-  box-shadow: none;
-}
-.btn:disabled {
-  cursor: default;
-}
-
-.wallet-btn {
-  border-radius: 5rem;
-  margin-left: 2rem;
-  border-color: transparent;
-}
-
-.hero-btn {
-  border-radius: 4px;
-  font-size: 1.2rem;
-  padding: 1.5rem 3rem;
-}
 
 /* CARD */
 
