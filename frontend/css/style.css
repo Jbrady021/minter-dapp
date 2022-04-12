@@ -26,29 +26,20 @@
 }
 
 
-
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+  color: var(--font-color);
+  font-family: var(--font-primary);
+}
 
 
 /* HEADER */
 
-header {
-  background-color: var(--gold-color);
-  box-shadow: var(--header-shadow);
-}
 
-header .container {
-  background-color: var(--lime-color);
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu {
-  background-color: var(--green-color);
-  display: flex;
-  gap: 10rem;
-  align-items: center;
-}
 
 /* NOT CONNECTED */
 .not-connected {
