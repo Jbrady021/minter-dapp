@@ -102,7 +102,7 @@ header .container {
 
 .btn {
   display: inline-block;
-  padding: 1rem 2rem;
+  background: var(--btn-bg-color);
   color: var(--accent-color);
   font-family: var(--font-secondary);
   font-style: italic;
