@@ -3,7 +3,7 @@ const chain = 'rinkeby'; // rinkeby or polygon
 
 const welcome_h1 = "Galactic Travelers Society!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
-const welcome_p = 'We have traveled all over the galaxy and have decided to make a pitstop at your wonderfully unique and obscure planet. Our attempts to blend in have been met with mixed results, however even our lazier efforts don’t garner even a second look. This makes the planet feel just a little bit like home. We may even decide to stay a little while longer';
+const welcome_p = 'We have traveled all over the galaxy and have decided to make a pitstop at your wonderfully unique and obscure planet. Check us out before we leave to explore the far reaches of the universe';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";
