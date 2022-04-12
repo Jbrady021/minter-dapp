@@ -32,7 +32,15 @@ body {
   font-family: var(--font-primary);
 }
 
-
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  justify-content: center;
+  overflow: hidden;
+}
 
 /* HEADER */
 
@@ -54,40 +62,6 @@ header .container {
 }
 
 /* NOT CONNECTED */
-.not-connected {
-  align-items: center;
-  height: 100%;
-  text-align: center;
-  margin: 0 auto 0 35vw;
-  opacity: 1;
-  transform: translateY(10vh);
-  transition: all 0.5s ease-in-out;
-}
-
-.show-not-connected {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.not-connected h1 {
-  text-shadow: 2px 2px 0 var(--accent-color);
-  font-style: italic;
-  margin: 2rem 0;
-  font-size: 3.5rem;
-}
-
-.not-connected p {
-  font-size: 1.1rem;
-  font-family: var(--font-secondary);
-  line-height: 1.8;
-}
-
-.not-connected a {
-  text-decoration: none;
-  color: var(--accent-color);
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 
 /* BUTTONS */
 
