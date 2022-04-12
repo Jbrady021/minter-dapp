@@ -116,7 +116,7 @@ header .container {
   cursor: pointer;
   position: relative;
   text-decoration: none;
-  outline: none;
+  width: 30%;
 }
 .btn:hover {
   box-shadow: none;
