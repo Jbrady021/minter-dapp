@@ -110,7 +110,7 @@ header .container {
   font-weight: bold;
   font-size: 1rem;
   text-align: center;
-  text-transform: capitalize;
+  transition: all 0.3s ease;
   box-shadow: var(--header-shadow);
   cursor: pointer;
   position: relative;
