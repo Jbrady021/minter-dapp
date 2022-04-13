@@ -72,7 +72,6 @@ header .container {
 
 /* NOT CONNECTED */
 .not-connected {
-  background-color: var(--bg-color);
   align-items: center;
   height: 300%;
   text-align: center;
