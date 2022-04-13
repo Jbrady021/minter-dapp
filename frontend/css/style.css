@@ -391,4 +391,6 @@ section {
 
 /* UTILITIES */
 
-
+.hidden {
+  display: none;
+}
