@@ -55,19 +55,16 @@ body {
 /* HEADER */
 
 header {
-  background-color: var(--bg-color);
   box-shadow: var(--header-shadow);
 }
 
 header .container {
-  background-color: var(--bg-color);
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
 .menu {
-  background-color: var(--bg-color);
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -75,6 +72,7 @@ header .container {
 
 /* NOT CONNECTED */
 .not-connected {
+  background-color: var(--bg-color);
   align-items: center;
   height: 300%;
   text-align: center;
@@ -85,13 +83,11 @@ header .container {
 }
 
 .show-not-connected {
-  background-color: var(--bg-color);
   opacity: 1;
   transform: translateY(0);
 }
 
 .not-connected h1 {
-  background-color: var(--bg-color);
   text-shadow: 2px 2px 0 var(--accent-color);
   font-style: italic;
   margin: 2rem 0;
@@ -99,14 +95,12 @@ header .container {
 }
 
 .not-connected p {
-  background-color: var(--bg-color);
   font-size: 1.1rem;
   font-family: var(--font-secondary);
   line-height: 1.8;
 }
 
 .not-connected a {
-  background-color: var(--bg-color);
   text-decoration: none;
   color: var(--accent-color);
   font-size: 1.5rem;
@@ -168,7 +162,6 @@ header .container {
 }
 
 .show-card {
-  background-color: var(--bg-color);
   opacity: 1;
   transform: translateX(0);
 }
