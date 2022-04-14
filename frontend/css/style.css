@@ -25,7 +25,7 @@
 }
 
 body {
-  background-image: url("images/header/background.png");
+  background-color: var(--accent-color2);
   display: flex;
   flex-flow: column;
   height: 100vh;
