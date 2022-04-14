@@ -25,6 +25,7 @@
 }
 
 body {
+  background-image: url("background.png");
   background-color: var(--accent-color2);
   display: flex;
   flex-flow: column;
