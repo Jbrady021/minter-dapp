@@ -13,16 +13,6 @@
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
   --accent-color: #be7efe;
-  --darkpurple-color: #280d42;
-  --pink-color: #e31d97;
-  --red-color: #ce111b;
-  --darkred-color: #3f0404;
-  --blue-color: #1426cd;
-  --green-color: #0e9610;
-  --yellow-color: #f0f40a;
-  --orange-color: #f17611;
-  --black-color: #0a0a0a;
-  --lightblue-color: #48c3ec;
   --header-shadow: var(--accent-color) 0px 0px 5px;
   --card-shadow: var(--accent-color) 0px 0px 20px;
 }
