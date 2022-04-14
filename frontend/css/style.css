@@ -65,7 +65,6 @@ header .container {
   background-color: var(--accent-color);
   align-items: center;
   height: 300%;
-  width: 100%;
   text-align: center;
   margin: 0 auto 0 35vw;
   opacity: 1;
