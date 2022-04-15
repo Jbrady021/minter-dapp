@@ -186,7 +186,7 @@ section {
   height: auto;
 }
 .countdown .clock-item .count-number {
-  background: var(--accent-color);
+  background: var(--accent-color2);
   color: var(--font-color);
   font-size: 2rem;
   font-weight: 700;
@@ -289,7 +289,7 @@ section {
 }
 
 .total-price-container p {
-  color: var(--accent-color2);
+  color: var(--accent-color);
 }
 
 /* MINTED CONTAINER */
