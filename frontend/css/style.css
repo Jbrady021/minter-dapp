@@ -186,7 +186,7 @@ section {
   height: auto;
 }
 .countdown .clock-item .count-number {
-  background: var(--accent-color2);
+  background: var(--accent-color);
   color: var(--font-color);
   font-size: 2rem;
   font-weight: 700;
@@ -212,7 +212,7 @@ section {
 }
 
 .countdown h1 {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color2);
   font-style: italic;
   margin: 2rem 0;
   font-size: 3.5rem;
