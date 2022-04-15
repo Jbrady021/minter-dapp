@@ -16,7 +16,7 @@
   --accent-color2: #361736;
   --black-color: #000000;
   --header-shadow: var(--black-color) 0px 0px 5px;
-  --card-shadow: var(--accent-color) 0px 0px 20px;
+  --card-shadow: var(--font-color) 0px 0px 20px;
 }
 
 * {
@@ -145,7 +145,7 @@ header .container {
   background-color: var(--accent-color2);
   border-radius: 5px;
   border: 3px solid var(--black-color);
-  box-shadow: var(--font-color);
+  box-shadow: var(--card-shadow);
   padding: 5rem;
   margin-bottom: 2rem;
   opacity: 1;
