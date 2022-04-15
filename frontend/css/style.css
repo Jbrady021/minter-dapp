@@ -186,7 +186,7 @@ section {
   height: auto;
 }
 .countdown .clock-item .count-number {
-  background: var(--accent-color2);
+  background: var(--accent-color);
   color: var(--font-color);
   font-size: 2rem;
   font-weight: 700;
@@ -252,7 +252,7 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: var(--accent-color);
+  background-color: var(--accent-color2);
   border-radius: 5px;
 }
 
