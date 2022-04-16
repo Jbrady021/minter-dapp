@@ -5,7 +5,6 @@ const welcome_h1 = "Galactic Travelers Society!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
 const welcome_p = 'We have traveled all over the galaxy and have decided to make a pitstop at your wonderfully unique and obscure planet. Grab us before we head off the far reaches of the universe';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
-const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";
 const h2_presale_coming_soon = "Pre-Sale Minting Countdown";
 const h2_presale_mint = "Public Minting Countdown";
