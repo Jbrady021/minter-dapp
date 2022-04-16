@@ -28,7 +28,7 @@
 body {
   display: flex;
   flex-flow: column;
-  height: 100vh;
+  height: 100%;
   color: var(--font-color);
   font-family: var(--font-primary);
 }
