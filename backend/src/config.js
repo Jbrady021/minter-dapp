@@ -9,7 +9,7 @@ const network = NETWORK.eth;
 // General metadata for Ethereum
 const namePrefix = "Galactic Travelers Society";
 const description = "We have traveled all over the galaxy and have decided to make a pitstop at your wonderfully unique and obscure planet. Our attempts to blend in have been met with mixed results, however even our lazier efforts don’t garner even a second look. This makes the planet feel just a little bit like home. We may even decide to stay a little while longer :)";
-const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
+const baseUri = "ipfs://bafybeidtnsvmdeqcdrdzxhba2r6fpnm27lhfir7rexi7srvfahzp3vd5qe/"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
