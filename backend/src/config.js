@@ -8,7 +8,7 @@ const network = NETWORK.eth;
 
 // General metadata for Ethereum
 const namePrefix = "Galactic Travelers Society";
-const description = "We have traveled all over the galaxy and have decided to make a pitstop at your wonderfully unique and obscure planet. Our attempts to blend in have been met with mixed results, however even our lazier efforts don’t garner even a second look. This makes the planet feel just a little bit like home. We may even decide to stay a little while longer :)";
+const description = "We have traveled all over the galaxy and decided to make a pitstop at your wonderfully unique and obscure planet. We didn’t know what to expect, but we seem to blend in very well and don't even garner a second look. In fact, Earth feels quite a bit like home. We may even decide to stay a little while longer.";
 const baseUri = "ipfs://bafybeidtnsvmdeqcdrdzxhba2r6fpnm27lhfir7rexi7srvfahzp3vd5qe/"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
@@ -179,7 +179,7 @@ const PUBLIC_MINT_START_DATE = "2022-04-17T11:30:48+00:00"; // This is required.
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
-const ROYALTY_SHARE = 2000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
+const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x040A73789F7Cce15e7a26f45D140a36eB5b6f4D0"; // Address that will receive the royalty
 const BASE_URI = "ipfs://bafybeidtnsvmdeqcdrdzxhba2r6fpnm27lhfir7rexi7srvfahzp3vd5qe/"; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
