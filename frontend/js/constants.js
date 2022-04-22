@@ -1,5 +1,5 @@
-const contractAddress = "0x238C78FB099C9c05D77547957d67aB0a19CaC1E3"; //Replace with your own contract address
-const chain = 'rinkeby'; // rinkeby or polygon
+const contractAddress = "0x2A898F16d1229C89C18c528c26c3EA3d78B31b23"; //Replace with your own contract address
+const chain = 'polygon'; // rinkeby or polygon
 
 const welcome_h1 = "Galactic Travelers Society!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
